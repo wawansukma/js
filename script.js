@@ -158,7 +158,7 @@ jQuery(document).ready(function() {
     $('#tools').hide();
     $('#custom_link').on('click',function(e){
         e.preventDefault();
-        $('#tools').val('').fadeToggle(function(){
+        $('#tools').val('').toggle(function(){
             $('#custom, #password, #uses, #expire').val('');
             if($(this).is(':visible')){
                 $('#custom').focus();
